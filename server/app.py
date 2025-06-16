@@ -13,9 +13,9 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from server.controller.pizza_controler import restaurant_bp
-    from server.controller.pizza_controler import pizza_bp
-    from server.controller.restraunt_pizza_controller import restaurant_pizza_bp
+    from server.controllers.restraunt_controller import restaurant_bp
+    from server.controllers.pizza_controller import pizza_bp
+    from server.controllers.restraunt_pizza_controller import restaurant_pizza_bp
 
     app.register_blueprint(restaurant_bp)
     app.register_blueprint(pizza_bp)
