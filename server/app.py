@@ -16,7 +16,7 @@ def create_app():
     # Import and register blueprints
     from .controllers.restaurant_controller import restaurant_bp
     from .controllerspizza_controller import pizza_bp
-    from .controllers.restaurant_pizza_controller import restaurant_pizza_bp
+    from .controllers.restaunt_pizza_controller import restaurant_pizza_bp
 
     app.register_blueprint(restaurant_bp)
     app.register_blueprint(pizza_bp)
