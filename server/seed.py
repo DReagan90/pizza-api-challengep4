@@ -1,4 +1,4 @@
-from .app import db, create_app
+from server.app import db, create_app
 from .models.restraunt import Restaurant
 from .models.pizza import Pizza
 from .models.restraunt_pizza import RestaurantPizza
